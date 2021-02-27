@@ -2,23 +2,44 @@ package com.kita.second.level1;
 
 public class Test {
 public static void main(String[] args) {
-	leader lead = new leader();
-	lead.say();
+	
+	Car car = new Car(4,0);
+	Sports_Car s_car = new Sports_Car();
+	
+
+	
 }
 }
 
-class student{
-	void say() {
-		System.out.println("말하기");
-	}
-	void listen() {
-		System.out.println("듣기");
-	}
-}
-
-class leader extends student{
-	void listen() {
-		System.out.println("말하자");
+class Car{
+	int wheel;
+	int speed=0;
+	Car(int wheel,int speed){
+		this.wheel = wheel;
+		this.speed = speed;
 	}
 	
 }
+
+class Sports_Car extends Car{
+	Sports_Car(int wheel, int speed) {
+		super(wheel, speed);
+		super.wheel = wheel;
+		super.speed += speed;	
+	}
+
+	void speed_add(int add_speed) {
+		speed += add_speed;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
