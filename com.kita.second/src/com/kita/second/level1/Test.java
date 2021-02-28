@@ -4,7 +4,7 @@ public class Test {
 public static void main(String[] args) {
 	
 	Car car = new Car(4,0);
-	Sports_Car s_car = new Sports_Car();
+	//Sports_Car s_car = new Sports_Car();
 	
 
 	

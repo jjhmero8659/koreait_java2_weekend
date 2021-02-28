@@ -6,14 +6,17 @@ public class PhoneTest {
 public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
 	Phone myPhone = new Phone();
-	myPhone.call("엄마");
-	myPhone.message("엄마", "내");
-	myPhone.color = "color";
-	myPhone.phonename = "아이폰 12";
-	myPhone.owner = "나";
-	myPhone.memory = 512;
+	Phone myPhone1 = new Phone("갤럭시", "마젠타", 256);
+
 	
 	Phone yourPhone = new Phone();
+	myPhone.setcolor("마젠타");
+	myPhone.setmemory(86);
+	System.out.println(myPhone.colorinfo());
+	System.out.println(myPhone.memoryinfo());
+	
+	
+	
 	
 	sc.close();
 }
