@@ -9,6 +9,7 @@ public class Baseball {//컴퓨터가 랜덤으로 숫자 생성
 		setRandoms();
 	}
 	
+	
 	private void setRandoms() {
 		for ( int i = 0 ; i < rArr.length; i ++ ) {
 			rArr [i] = (int) ( Math.random() * (max - min +  1 ) + min);
@@ -26,5 +27,15 @@ public class Baseball {//컴퓨터가 랜덤으로 숫자 생성
 	int arrlength() {
 		return rArr.length;
 	}
+	int sum(int... arr) {//arr[10]
+		int total = 0;
+		for (int i = 0; i < arr.length; i++) {
+			total += arr[i];
+		}
+		return total;
+		
+	}
+	 
 	
+
 }

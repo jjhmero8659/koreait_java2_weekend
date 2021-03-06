@@ -16,7 +16,7 @@ public class Myball {
 	void scan_myArr() {
 			// 내가 정수 값 3 개 입력 받아서 myArr에 넣기
 			for ( int i = 0 ; i < myArr.length ; i ++ ) {
-				System.out.printf ( " 값 %d : \n" , i + 1 );
+				System.out.printf ( " 값 %d : " , i + 1 );
 				myArr[i] = sc.nextInt ();
 				if (myArr [i] < min || myArr [i] > max) {
 					System.out. println (" 범위 밖의 숫자입니다. ");
