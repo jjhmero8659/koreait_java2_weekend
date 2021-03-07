@@ -6,9 +6,14 @@ public class Dog extends Animal {
 		super(name);
 		super.name = "똘이";
 		this.cutiness = true;
+//		super.type="";
 	}
+	
 	@Override
 	void cry() {
+		System.out.println("개가 짖는다.");
+	}
+	void bark() {
 		System.out.println("개가 짖는다.");
 	}
 	

@@ -7,7 +7,7 @@ public class Korean {
 	String name;
 	int age;
 	
-	public Korean(String nation) {
-		this.nation = nation;
-	}
+//	public Korean(String nation) {
+//		this.nation = nation;
+//	}
 }
