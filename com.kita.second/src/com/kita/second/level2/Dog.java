@@ -9,6 +9,7 @@ public class Dog extends Animal {
 //		super.type="";
 	}
 	
+	
 	@Override
 	void cry() {
 		System.out.println("개가 짖는다.");
