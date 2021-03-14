@@ -3,7 +3,7 @@ package co.kita.second.level3;
 public class Dog extends Animal{
 
 	Dog(String name) {
-		super(name);
+		super(name); // Animal(name);
 	}
 
 	@Override

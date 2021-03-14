@@ -1,0 +1,7 @@
+package co.kita.second.level3;
+
+public class Parent {
+	void method() throws Exception{
+		Integer.parseInt("123가");
+	}
+}
