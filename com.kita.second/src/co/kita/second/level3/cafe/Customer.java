@@ -1,12 +1,36 @@
 package co.kita.second.level3.cafe;
 
+import java.util.Scanner;
+
 public class Customer {
-	MenuItem order(Menu menu1) {
-		MenuItem menu = new MenuItem("아메리카노",1000);
-		return menu;
+	public MenuItem order(Menu m) {
+		m.showMenus();
+
+		Scanner scan = new Scanner(System.in);
+		MenuItem mi = null;
+
+		while(mi == null) {
+			// 채우기
+			System.out.print("메뉴번호를 입력해주세요: ");
+			String strNum = scan.next();
+			int menuNum;
+			try{
+				menuNum = Integer.parseInt(strNum);
+				mi = m.choose(menuNum-1); // 질문
+			}catch(NumberFormatException e) {
+				System.out.println("숫자만 입력해주세요.");
+			}catch(Exception e) {
+				System.out.println("메뉴를 잘못 선택했습니다");
+			}
+
+		}
+		scan.close();
+		return mi;
 	}
 
-	public void drinkCoffee(Coffee c1) {
-		System.out.println(c1.getName() + "(을)를 마신다.");
+	void drinkCoffee(Coffee coffee) {
+		String name = coffee.getName();
+		System.out.println(name+"(을)를 마신다.");
+
 	}
 }
