@@ -10,5 +10,8 @@ public class Dog extends Animal{
 	void cry() {
 		System.out.println("개가 운다.");
 	}
+	String getName() {
+		return name;
+	}
 
 }
